@@ -101,9 +101,7 @@ export default {
       }
     },
     removeTodo(index) {
-
-      this.todos.splice(index, 1);
-
+      this.todos.splice(index, 0);
     },
     completeTodo(index) {
       const completedTodo = this.todos.splice(index, 1)[0];
